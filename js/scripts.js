@@ -1,18 +1,12 @@
-var counter = 0;
-var suitCounter = 0;
+
 var suits = ["Spades", "Clubs", "Diamonds", "Hearts"];
 var numbers = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"];
 
 $(document).ready(function() {
 suits.forEach(function(suit) {
-  suit = suits[suitCounter];
   numbers.forEach(function(number){
-    number = numbers[counter];
-    $("#listHold").append("<li>" + numbers[counter] + " of " + suit + "</li>")
-    counter ++;
+    $("#listHold").append("<li>" + number + " of " + suit + "</li>");
   });
-  counter = 0;
-  suitCounter++;
 });
 
 });
